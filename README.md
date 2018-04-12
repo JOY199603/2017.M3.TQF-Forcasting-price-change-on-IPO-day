@@ -27,4 +27,4 @@
 
 ## 3. Plan
 * Using different machine learning method to find which features have significant impact to the price change and trading volume on IPO day and try to find the financial explain for this.
-* Try to predict the price change of stocks that IPO in 2017 by trainning these stocks IPO between 2010 to 2016.# 2017.M3.TQF-Forcasting price change on IPO day
+* Try to predict the price change of stocks that IPO in 2017 by trainning these stocks IPO between 2010 to 2016.
