@@ -28,7 +28,7 @@
 
 ## 3. Model
 * Using linear regression to do the regression to the continuous variable.
-* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the comfusion matrix and ROC curve and auc.Comare the result.
+* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc.Comare the result.
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/confusion.png"/></div>
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/ROC.png"/></div>
 
