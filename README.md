@@ -6,7 +6,7 @@
 ## 2. Background
 * The stocks almost have a large return on their IPO day. What factors have impact on the return? whether we can forecast the return by finding proper features?
 ## 3. Data Set
-* The data set was obtained and processed by Python from the __open API with WIND__. 
+* The original data set was obtained and processed by Python from the __open API with WIND__. 
 * I've collected all the A-shares and choosen __1828__ stocks whose IPO dates were after 2010
 * There are __12__ variables of these stocks:
   * __industry_gics__: the belonging industry of the stock by the wind industry classification,which is similar to the GICS
@@ -23,9 +23,10 @@
   * __ipo_listdayvolume__: the trading volume of the stock on the IPO day
 		
 * The ipo_pctchange and ipo_listdayvolume are the response variables
+* [Original Data Set](https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/alldata.csv)
 
-## 3. Plan
-* Using different machine learning method to find which features have significant impact to the price change and trading volume on IPO day and try to find the financial explain for this.
+## 3. Model
+* Using linear regression to do the regression to the continuous variable.
 * Try to predict the price change of stocks that IPO in 2017 by trainning these stocks IPO between 2010 to 2016.
 ## Reference:
 * python-machine-learning-book-2nd-edition 
