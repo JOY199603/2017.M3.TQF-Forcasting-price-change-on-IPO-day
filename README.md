@@ -5,6 +5,7 @@
 	1701213169
 ## 2. Background
 * The stocks almost have a large return on their IPO day. What factors have impact on the return? whether we can forecast the return by finding proper features?
+<div align=center><img width="800" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/IPOPROCESS.png"/></div>
 ## 3. Data Set
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
 * I've collected all the A-shares and choosen __1828__ stocks whose IPO dates were after 2010
@@ -27,7 +28,9 @@
 
 ## 3. Model
 * Using linear regression to do the regression to the continuous variable.
-* Try to predict the price change of stocks that IPO in 2017 by trainning these stocks IPO between 2010 to 2016.
+* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the comfusion matrix and ROC curve and auc.Comare the result.
+<div align=center><img width="800" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/confusion.png"/></div>
+<div align=center><img width="800" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/ROC.png"/></div>
 ## Reference:
 * python-machine-learning-book-2nd-edition 
 * [基于SVM的IPO首日投资策略分析(IPO Stock Price Forecasting Using Support Vector Machines)](http://xueshu.baidu.com/s?wd=paperuri%3A%287bd767e78dfed152c735ed0b0a1d2f5a%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fkns.cnki.net%2FKCMS%2Fdetail%2Fdetail.aspx%3Ffilename%3Dxtyy201310042%26dbname%3DCJFD%26dbcode%3DCJFQ&ie=utf-8&sc_us=16091207344911522734)
