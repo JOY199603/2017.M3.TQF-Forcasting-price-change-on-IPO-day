@@ -64,6 +64,7 @@ Model result:
  * (1) PCA has no improvement to this data
  * (2) By using K-fold and calculating the mean auc, all the model has mean auc above 0.6
 Neural network&svm has significant better result 0.772 and 0.863
+
 Features impact:
  * (1) Using the randon forest to test the importance of variables and find that backdoor、IPO-type、Investment Banks are more unimpotant.
  * (2) IPO_DATE，IPO_PRICE，IPO_AMOUNT，IPO_EXPENSE，and IPO_board have more significant impact to the return
