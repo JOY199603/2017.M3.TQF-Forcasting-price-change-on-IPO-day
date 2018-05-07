@@ -35,9 +35,11 @@ ipo_nturn	| the turnover rate of the stock for the first 10-days
 * [Original Data Set](https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/alldata.csv)
 
 ## 4. Model
-* Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
-* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
-<div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/readme.png"/></div>
+* (1) Define the fuctions we need in the model. Like calculate the confusion matrix, draw the roc curve.
+* (2) Preprocess the Data: Deal with nominal and ordinal features,divide data into train and test set.
+* (3)Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
+* (4)Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
+<div align=center><img width="800" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/readme.png"/></div>
 
 Models |Mean AUC
 -------|---------
