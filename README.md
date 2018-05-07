@@ -1,3 +1,4 @@
+
 # Forecasting the Price Change on IPO day
 
 ## 1. Team Member
@@ -11,6 +12,7 @@
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
 * I've collected all the A-shares and choosen __1828__ stocks whose IPO dates were after 2010
 * There are __12__ variables of these stocks:
+
 Variables | Description
 -------|---------
 industry_gics	| the belonging industry of the stock by the wind industry classification,which is similar to the GICS
