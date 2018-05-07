@@ -26,12 +26,20 @@
 * The ipo_pctchange and ipo_listdayvolume are the response variables
 * [Original Data Set](https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/alldata.csv)
 
-## 3. Model
-* Using linear regression to do the regression to the continuous variable.
-* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc.Comare the result.
+## 4. Model
+* Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
+* Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/confusion.png"/></div>
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/ROC.png"/></div>
 
+## 5. Summary
+ * (1) Using the randon forest to test the importance of variables and find that backdoor、IPO-type、Investment Banks are more unimpotant.
+ * (2) IPO_DATE，IPO_PRICE，IPO_AMOUNT，IPO_EXPENSE，and IPO_board have more significant impact to the return
+ * (3) The IPO_PRICE and IPO_TIME have negative impact to the return.
+ * (4) The stocks on Main-board are tend to have smaller return
+ * (5) The return are going to be higher year after year. A share investors all believe the return on ipo day is high, more and more investors are trend to buy the 'new stocks'
+ * (6) Some industries tends to have significant higher return: Public utility,health care, Consumer Discretionary,energy. Most these industries are emerging industry
+ * (7) Investment banks like 中原证券 中国银河证券 首创证券 华安证券 兴业证券 have higher return, which means these investment banks tend to undervalue the stocks. 
 ## Reference:
 * python-machine-learning-book-2nd-edition 
 * [基于SVM的IPO首日投资策略分析(IPO Stock Price Forecasting Using Support Vector Machines)](http://xueshu.baidu.com/s?wd=paperuri%3A%287bd767e78dfed152c735ed0b0a1d2f5a%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fkns.cnki.net%2FKCMS%2Fdetail%2Fdetail.aspx%3Ffilename%3Dxtyy201310042%26dbname%3DCJFD%26dbcode%3DCJFQ&ie=utf-8&sc_us=16091207344911522734)
