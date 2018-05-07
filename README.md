@@ -11,18 +11,22 @@
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
 * I've collected all the A-shares and choosen __1828__ stocks whose IPO dates were after 2010
 * There are __12__ variables of these stocks:
-  * __industry_gics__: the belonging industry of the stock by the wind industry classification,which is similar to the GICS
-  * __mkt__: the board of the stock,like main board,ChiNext,etc
-  * __backdoor__: whether the stock is IPO by back-door listing
-  * __ipo_date__: the ipo date
-  * __ipo_price__: the ipo price
-  * __ipo_amount__: the ipo amount
-  * __ipo_puboffrdate__: the public announcement date of IPO
-  * __ipo_leadundr__: the main investment bank to assist the IPO
-  * __ipo_type__: the IPO type 
-  * __ipo_expense__: the expense of IPO
-  * __ipo_pctchange__: the return of the stock on the IPO day
-  * __ipo_listdayvolume__: the trading volume of the stock on the IPO day
+Variables | Description
+-------|---------
+industry_gics	| the belonging industry of the stock by the wind industry classification,which is similar to the GICS
+mkt		| the board of the stock,like main board,ChiNext,etc
+backdoor	| whether the stock is IPO by back-door listing
+ipo_date	| the ipo date
+ipo_price	| the ipo price
+ipo_puboffrdate	| the public announcement date of IPO
+ipo_amount	| the ipo amount
+ipo_leadundr	| the main investment bank to assist the IPO
+ipo_type	| the IPO type 
+ipo_expense	| the expense of IPO
+ipo_pctchange	| the return of the stock on the IPO day
+ipo_npctchange	| the return of the stock for the first 10-days
+ipo_turn	| the turnover rate of the stock on the IPO day
+ipo_nturn	| the turnover rate of the stock for the first 10-days
 		
 * The ipo_pctchange and ipo_listdayvolume are the response variables
 
