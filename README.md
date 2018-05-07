@@ -7,7 +7,7 @@
 ## 2. Background
 * The stocks almost have a large return on their IPO day. What factors have impact on the return? whether we can forecast the return by finding proper features?
 <div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/IPOPROCESS.png"/></div>
-<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/policychange.png"/></div>
+<div align=center><img width="700" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/policychange.png"/></div>
 
 ## 3. Data Set
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
@@ -41,9 +41,9 @@ ipo_nturn	| the turnover rate of the stock for the first 10-days
 * (1) Define the fuctions we need in the model. Like calculate the confusion matrix, draw the roc curve.
 * (2) Preprocess the Data: Deal with nominal and ordinal features,divide data into train and test set.
 * There are too much dummy variables. We use random forest to access the feature importance.
-<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/x&y.png"/></div>
+<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/importance.png"/></div>
 * (3) Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
-<div align=center><img width="800" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/stat.png"/></div>
+<div align=center><img width="400" height="700" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/stat.png"/></div>
 Most variables are significant by their P-value;
 The ipo-price and ipo-time have negative impact to the return;
 The stocks on Main-board are tend to have smaller return.
