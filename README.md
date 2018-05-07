@@ -7,6 +7,7 @@
 ## 2. Background
 * The stocks almost have a large return on their IPO day. What factors have impact on the return? whether we can forecast the return by finding proper features?
 <div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/IPOPROCESS.png"/></div>
+<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/policychange.png"/></div>
 
 ## 3. Data Set
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
@@ -34,10 +35,19 @@ ipo_nturn	| the turnover rate of the stock for the first 10-days
 
 * [Original Data Set](https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/alldata.csv)
 
+<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/x&y.png"/></div>
+
 ## 4. Model
 * (1) Define the fuctions we need in the model. Like calculate the confusion matrix, draw the roc curve.
 * (2) Preprocess the Data: Deal with nominal and ordinal features,divide data into train and test set.
-* (3)Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
+* There are too much dummy variables. We use random forest to access the feature importance.
+<div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/x&y.png"/></div>
+* (3) Using linear regression to do the regression to the continuous variable. Find the p-value and coefficient of every features.
+<div align=center><img width="800" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/stat.png"/></div>
+Most variables are significant by their P-value;
+The ipo-price and ipo-time have negative impact to the return;
+The stocks on Main-board are tend to have smaller return.
+
 * (4)Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
 <div align=center><img width="800" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/readme.png"/></div>
 
@@ -50,6 +60,11 @@ SVM	| 0.863
 Neural Network	| 0.772
 
 ## 5. Summary
+Model result:
+ * (1) PCA has no improvement to this data
+ * (2) By using K-fold and calculating the mean auc, all the model has mean auc above 0.6
+Neural network&svm has significant better result 0.772 and 0.863
+Features impact:
  * (1) Using the randon forest to test the importance of variables and find that backdoor、IPO-type、Investment Banks are more unimpotant.
  * (2) IPO_DATE，IPO_PRICE，IPO_AMOUNT，IPO_EXPENSE，and IPO_board have more significant impact to the return
  * (3) The IPO_PRICE and IPO_TIME have negative impact to the return.
