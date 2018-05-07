@@ -6,6 +6,7 @@
 ## 2. Background
 * The stocks almost have a large return on their IPO day. What factors have impact on the return? whether we can forecast the return by finding proper features?
 <div align=center><img width="500" height="300" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/IPOPROCESS.png"/></div>
+
 ## 3. Data Set
 * The original data set was obtained and processed by Python from the __open API with WIND__. 
 * I've collected all the A-shares and choosen __1828__ stocks whose IPO dates were after 2010
@@ -24,6 +25,7 @@
   * __ipo_listdayvolume__: the trading volume of the stock on the IPO day
 		
 * The ipo_pctchange and ipo_listdayvolume are the response variables
+
 * [Original Data Set](https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/alldata.csv)
 
 ## 4. Model
@@ -31,6 +33,13 @@
 * Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/confusion.png"/></div>
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/ROC.png"/></div>
+Models |Mean AUC
+-------|---------
+Decision Tree	| 0.644
+Logistic Regression	|0.669
+KNN	| 0.603
+SVM	|0.863
+Neural Network	| 0.772
 
 ## 5. Summary
  * (1) Using the randon forest to test the importance of variables and find that backdoor、IPO-type、Investment Banks are more unimpotant.
