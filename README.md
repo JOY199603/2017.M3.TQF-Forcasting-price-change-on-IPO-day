@@ -33,12 +33,13 @@
 * Transfer the continuous return to discrete labels and Use lostic regrssion,SVM,decision tree,random forest,KNN,neural network to train the model and compute the confusion matrix and ROC curve and auc. Compare the result.
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/confusion.png"/></div>
 <div align=center><img width="400" height="400" src="https://github.com/JOY199603/2017.M3.TQF-Forcasting-price-change-on-IPO-day/blob/master/images/ROC.png"/></div>
+
 Models |Mean AUC
 -------|---------
 Decision Tree	| 0.644
-Logistic Regression	|0.669
+Logistic Regression	| 0.669
 KNN	| 0.603
-SVM	|0.863
+SVM	| 0.863
 Neural Network	| 0.772
 
 ## 5. Summary
